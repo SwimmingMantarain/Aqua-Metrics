@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua-Metrics Dashboard</title>
+    <link href="/static/css/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 p-4 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Aqua-Metrics Dashboard</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/dashboard" class="hover:underline">Dashboard</a></li>
+                    <li><a href="/stats" class="hover:underline">Statistics</a></li>
+                    <li><a href="/profile" class="hover:underline">Profile</a></li>
+                    <li><a href="/logout" class="hover:underline">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Welcome Message -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Welcome back, [Username]!</h2>
+                <p class="text-gray-700">Track your swimming sessions, analyze your stats, and get insights into your performance.</p>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Quick Stats</h2>
+                <ul class="text-gray-700">
+                    <li>Total Sessions: 12</li>
+                    <li>Best Lap Time: 24.3 seconds</li>
+                    <li>Distance Covered: 5000 meters</li>
+                    <li>Competitions Won: 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sessions Table -->
+        <div class="bg-white p-6 mt-8 rounded-lg shadow-md">
+            <h2 class="text-xl font-bold mb-4">Recent Sessions</h2>
+            <table class="min-w-full table-auto">
+                <thead class="bg-blue-500 text-white">
+                    <tr>
+                        <th class="px-4 py-2">Date</th>
+                        <th class="px-4 py-2">Distance</th>
+                        <th class="px-4 py-2">Time</th>
+                        <th class="px-4 py-2">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">2024-10-01</td>
+                        <td class="border px-4 py-2">1000m</td>
+                        <td class="border px-4 py-2">25:43</td>
+                        <td class="border px-4 py-2">Felt strong</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="border px-4 py-2">2024-09-28</td>
+                        <td class="border px-4 py-2">1500m</td>
+                        <td class="border px-4 py-2">38:15</td>
+                        <td class="border px-4 py-2">Pushed too hard</td>
+                    </tr>
+                    <!-- Add more rows as necessary -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white mt-8 shadow-lg">
+        <div class="container mx-auto text-center">
+            <p>Aqua-Metrics &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
